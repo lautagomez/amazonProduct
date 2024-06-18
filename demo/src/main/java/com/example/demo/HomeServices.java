@@ -20,7 +20,7 @@ public class HomeServices {
     HashMap<String, Integer> palabraHashMap = new HashMap<String, Integer>();
     ArrayList<String> URLs = new ArrayList<String>();
     List<String> WordsForbidden = new ArrayList<>(List.of("it", "as", "with", "any", "the", "is", "in", "a","and"));
-    List<Words> wordsList = new ArrayList<Words>();
+
 
 
     public  HashMap<String, Integer> getWords()
@@ -46,13 +46,6 @@ public class HomeServices {
                         else
                             palabraHashMap.put(word, 1);
                     }
-
-                    if (wordsList.contains(new Words(word, 1)))
-                    {
-
-                    }
-
-
 
                 }
             }
